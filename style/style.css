@@ -1,0 +1,185 @@
+/* =========================
+   STYLE GLOBAL AGRIYIELD
+   ========================= */
+
+:root {
+    --vert-principal: #1f5c3d;
+    --vert-secondaire: #2d7a52;
+    --fond-clair: #f7faf3;
+    --texte-principal: #1f2937;
+    --texte-secondaire: #374151;
+    --carte: #ffffff;
+    --bordure: #e5e7eb;
+    --jaune-clair: #fff4d6;
+    --vert-box: #edf7ef;
+}
+
+/* Taille générale du texte */
+html,
+body,
+[class*="css"] {
+    font-size: 16px !important;
+}
+
+/* Titres principaux */
+.main-title {
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--vert-principal);
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: var(--vert-secondaire);
+    margin-bottom: 35px;
+    line-height: 1.5;
+}
+
+.section-title {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--texte-principal);
+    margin-bottom: 18px;
+}
+
+/* Cartes classiques */
+.card {
+    background-color: var(--carte);
+    color: var(--texte-principal) !important;
+    padding: 24px;
+    border-radius: 14px;
+    border: 1px solid var(--bordure);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.card * {
+    color: var(--texte-principal) !important;
+}
+
+/* Boîte informative */
+.info-box {
+    padding: 16px 20px;
+    border-radius: 12px;
+    background-color: #edf7ef !important;
+    border-left: 6px solid #2d7a52;
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1f2937 !important;
+}
+
+.info-box * {
+    color: #1f2937 !important;
+}
+
+/* Boîte d’avertissement */
+.warning-box {
+    padding: 16px 20px;
+    border-radius: 12px;
+    background-color: #fff4d6 !important;
+    border-left: 6px solid #d49b00;
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1f2937 !important;
+}
+
+.warning-box * {
+    color: #1f2937 !important;
+}
+
+/* Texte secondaire */
+.small-text {
+    font-size: 15px;
+    color: #4b5563 !important;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #20232e;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #f3f3f3 !important;
+    font-size: 16px !important;
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    font-size: 21px !important;
+    font-weight: 800 !important;
+}
+
+section[data-testid="stSidebar"] label {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+/* Radio buttons */
+div[role="radiogroup"] label {
+    font-size: 16px !important;
+    padding: 6px 0;
+}
+
+/* Boutons */
+.stButton button {
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 0.7rem 1.2rem;
+}
+
+/* Metrics */
+div[data-testid="stMetricValue"] {
+    font-size: 30px !important;
+}
+
+/* Dataframes */
+[data-testid="stDataFrame"] {
+    font-size: 16px !important;
+}
+
+/* Inputs */
+input,
+textarea,
+select {
+    font-size: 16px !important;
+}
+
+/* Espacement global */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+/* Toolbar Streamlit */
+[data-testid="stToolbar"] {
+    background: rgba(247, 250, 243, 0.92);
+    border-bottom: 1px solid rgba(31, 92, 61, 0.08);
+    backdrop-filter: blur(8px);
+}
+
+[data-testid="stToolbar"] button {
+    border-radius: 8px !important;
+    color: var(--texte-secondaire) !important;
+}
+
+[data-testid="stAppDeployButton"] button {
+    background: #ffffff !important;
+    border: 1px solid var(--bordure) !important;
+    box-shadow: none !important;
+    color: var(--vert-principal) !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    min-height: 34px !important;
+}
+
+[data-testid="stMainMenu"] button {
+    color: var(--texte-secondaire) !important;
+}
