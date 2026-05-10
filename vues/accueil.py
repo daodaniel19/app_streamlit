@@ -13,6 +13,31 @@ def afficher_accueil(references):
                 background: #f8fdf5;
             }
 
+            [data-testid="stToolbar"] {
+                background: rgba(248, 253, 245, 0.92);
+                border-bottom: 1px solid rgba(31, 92, 61, 0.08);
+                backdrop-filter: blur(8px);
+            }
+
+            [data-testid="stToolbar"] button {
+                border-radius: 8px !important;
+                color: #374151 !important;
+            }
+
+            [data-testid="stAppDeployButton"] button {
+                background: #ffffff !important;
+                border: 1px solid #e5e7eb !important;
+                box-shadow: none !important;
+                color: #1f5c3d !important;
+                font-size: 14px !important;
+                font-weight: 700 !important;
+                min-height: 34px !important;
+            }
+
+            [data-testid="stMainMenu"] button {
+                color: #374151 !important;
+            }
+
             .block-container {
                 max-width: 1340px;
                 padding-top: 4.75rem;
